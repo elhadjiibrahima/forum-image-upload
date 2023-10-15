@@ -251,8 +251,6 @@ func createPost(w http.ResponseWriter, r *http.Request) {
 		}
 		defer f.Close()
 		io.Copy(f, file)
-	} else {
-		createError(w, r, http.StatusBadRequest)
 	}
 
 	if !data.Message.ValidateThreads() {
