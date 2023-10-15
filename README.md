@@ -1,4 +1,4 @@
-# Forum-image-uploead
+# Forum-image-upload
 
 # Auteurs
 * Mouhamadoufadilou Diop - [mouhamadoufadiop](https://learn.zone01dakar.sn/git/mouhamadoufadiop)
