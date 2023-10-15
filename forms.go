@@ -272,8 +272,14 @@ func createPost(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+	if len(r.FormValue("title")) == 0 || len(r.FormValue("content")) == 0 || len(r.Form["threads"]) == 0 {
+		createError(w, r, http.StatusBadRequest)
 
-	addPost(database, r.FormValue("title"), fileName, r.FormValue("content"), r.Form["threads"], data.User.Id, 0, 0)
+	} else {
+		addPost(database, r.FormValue("title"), fileName, r.FormValue("content"), r.Form["threads"], data.User.Id, 0, 0)
+
+	}
+
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 
 }
