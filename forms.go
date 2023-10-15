@@ -275,11 +275,6 @@ func createPost(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if data.Post.Title == "" || data.Post.Content == "" || r.Form["threads"] == nil {
-		createError(w, r, http.StatusBadRequest)
-
-	}
-
 	addPost(database, r.FormValue("title"), fileName, r.FormValue("content"), r.Form["threads"], data.User.Id, 0, 0)
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 
