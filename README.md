@@ -4,6 +4,8 @@
 * Mouhamadoufadilou Diop - [mouhamadoufadiop](https://learn.zone01dakar.sn/git/mouhamadoufadiop)
 * Abdou Khadre Wade - [serwade](https://learn.zone01dakar.sn/git/serwade)
 * Alimoudine Idrissou - [ialimoud](https://learn.zone01dakar.sn/git/ialimoud)
+* mamadou balde - [mabalde](https://learn.zone01dakar.sn/git/mabalde)
+* Ibrahima  Diallo - [ediallo](https://learn.zone01dakar.sn/git/ediallo)
 
 #  Comment utiliser notre projet :
 
