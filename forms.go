@@ -392,6 +392,10 @@ func updatePost(w http.ResponseWriter, r *http.Request) {
 
 	}
 	id, _ := strconv.Atoi(r.FormValue("id"))
+	if len(r.FormValue("title")) == 0 || len(r.FormValue("content")) != 0 || len(r.Form["threads"]) != 0 {
+		createError(w, r, http.StatusBadRequest)
+
+	}
 	err = updatePostByID(database, id, r.FormValue("title"), fileName, r.FormValue("content"), r.Form["threads"])
 	if err != nil {
 		createError(w, r, http.StatusInternalServerError)
